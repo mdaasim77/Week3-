@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern html</title>
+</head>
+<body>
+    <h2>
+        Write a short note on the tab index.
+    </h2>
+    <h4>
+        The tabindex attribute is used in HTML to define the order in which elements receive focus when users navigate through a web page using the keyboard's Tab key. It allows developers to specify a custom tab order for elements, overriding the default order determined by their position in the HTML markup.
+    </h4>
+    <p>
+        Here are a few key points about the tabindex attribute:
+    </p>
+    <ol>
+        <li>Tab Order: The tabindex attribute assigns a numerical value to elements, indicating their position in the tab order. Elements with a lower tabindex value are focused first, followed by elements with higher values. If multiple elements share the same tabindex value, they are focused in the order they appear in the HTML markup.
+
+        </li>
+        <li>Positive and Negative Values: The tabindex attribute can accept positive and negative values. Positive values (e.g., tabindex="1", tabindex="2") indicate elements that should be included in the natural tab order. Negative values (e.g., tabindex="-1") remove elements from the natural tab order but allow them to be programmatically focused using JavaScript.
+
+        </li>
+        <li>Focusable Elements: Not all elements are inherently focusable by default. Elements like  &lt; div&gt;, &lt;span&gt;, and &lt;p&gt; are not in the natural tab order. However, by adding a tabindex attribute, these elements can be made focusable and participate in the tab order.
+
+        </li>
+        <li>
+            Skip Navigation: tabindex="-1" is commonly used to create skip navigation links. By placing a link with tabindex="-1" at the beginning of a page, keyboard users can skip repetitive navigation menus and jump directly to the main content.
+        </li>
+    </ol>
+    <p>
+        It's important to use the tabindex attribute judiciously and follow accessibility best practices. The tab order should align with the visual layout and logical flow of the page. Additionally, ensure that the page remains navigable and usable for users who rely on keyboard navigation by testing and considering user feedback.
+    </p>
+</body>
+</html>
